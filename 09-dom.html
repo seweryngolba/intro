@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      placeholder="Type something"
+      class="js-input"
+      onkeyup="
+      const inputElement = document.querySelector('.js-input');
+      document.querySelector('.js-typing').innerHTML = inputElement.value;
+      "
+    />
+    <p class="js-typing"></p>
+    <script></script>
+  </body>
+</html>
