@@ -4,6 +4,30 @@
     <title>Advanced functions</title>
   </head>
   <body>
+    <!-- <button
+      onclick="
+      messages++;
+      displayNotification();
+    "
+    >
+      Add
+    </button>
+
+    <button
+      onclick="
+      if (messages > 0) {
+        messages--;
+
+        // If there are no new messages, stop displaying
+        // the notification in the tab.
+        if (messages === 0) {
+          stopNotification();
+        }
+      }
+    "
+    >
+      Remove
+    </button> -->
     <script>
       //   function greeting() {
       //     console.log("hello");
@@ -43,18 +67,136 @@
       //     console.log("hello4");
       //   });
 
-      setTimeout(function () {
-        console.log("timeout");
-        console.log("timeout2");
-      }, 3000);
+      // setTimeout(function () {
+      //   console.log("timeout");
+      //   console.log("timeout2");
+      // }, 3000);
 
-      console.log("next line");
+      // console.log("next line");
 
-      setInterval(function () {
-        console.log("interval");
-      }, 3000);
+      // setInterval(function () {
+      //   console.log("interval");
+      // }, 3000);
 
-      console.log("next line 2");
+      // console.log("next line 2");
+
+      // ["make dinner", "wash dishes", "watch youtube"].forEach(function (
+      //   value,
+      //   index
+      // ) {
+      //   if (value === "wash dishes") {
+      //     return;
+      //   }
+      //   console.log(index);
+      //   console.log(value);
+      // });
+
+      // const add = function () {
+      //   console.log(2 + 3);
+      // };
+
+      // add();
+      // add();
+
+      // function runTwice(fun) {
+      //   fun();
+      //   fun();
+      // }
+
+      // runTwice(function () {
+      //   console.log("12b");
+      // });
+
+      // runTwice(add);
+
+      // function changeTo() {
+      //   const btn = document.querySelector(".js-button-start");
+      //   btn.innerHTML = "Loading...";
+      //   setTimeout(function () {
+      //     btn.innerHTML = "Finished!";
+      //   }, 1000);
+      // }
+
+      // let timeoutId;
+
+      // function addToCart() {
+      //   const dspl = document.querySelector(".js-add-to-cart");
+      //   dspl.innerHTML = "Added";
+      //   clearTimeout(timeoutId);
+      //   setTimeout(function () {
+      //     dspl.innerHTML = "";
+      //   }, 2000);
+      // }
+
+      // let messages = 2;
+
+      // let intervalId;
+
+      // let isDisplayingNotification;
+
+      // displayNotification();
+
+      // function displayNotification() {
+      //   if (isDisplayingNotification) {
+      //     return;
+      //   }
+
+      //   isDisplayingNotification = true;
+
+      //   intervalId = setInterval(function () {
+      //     if (document.title === "Advanced functions") {
+      //       document.title = `(${messages}) New messages`;
+      //     } else {
+      //       document.title = "Advanced functions";
+      //     }
+      //   }, 1000);
+      // }
+
+      // function stopNotification() {
+      //   isDisplayingNotification = false;
+
+      //   clearInterval(intervalId);
+      //   document.title = "Advanced functions";
+      // }
+
+      // let messages = 2;
+
+      // // Save the intervalId in case we need to cancel it.
+      // let intervalId;
+
+      // // We'll use this variable to keep track of whether
+      // // or not we're displaying the notification.
+      // let isDisplayingNotification;
+
+      // // Start displaying the notification in the tab
+      // // when the page first loads.
+      // displayNotification();
+
+      // function displayNotification() {
+      //   // If we're already displaying the notification,
+      //   // stop this function because we don't want to
+      //   // create 2 intervals at the same time.
+      //   if (isDisplayingNotification) {
+      //     return;
+      //   }
+
+      //   isDisplayingNotification = true;
+
+      //   intervalId = setInterval(function () {
+      //     if (document.title === "App") {
+      //       document.title = `(${messages}) New messages`;
+      //     } else {
+      //       document.title = "App";
+      //     }
+      //   }, 1000);
+      // }
+
+      // function stopNotification() {
+      //   isDisplayingNotification = false;
+
+      //   clearInterval(intervalId);
+      //   document.title = "App";
+      // }
     </script>
   </body>
 </html>
